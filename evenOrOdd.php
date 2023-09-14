@@ -46,7 +46,8 @@
         <?php
         if($_SERVER["REQUEST_METHOD"]=="POST"){
             $number = $_POST["number"];
-         if($number%2){
+            $result = $number%2;
+         if($result ==0){
             echo "Your Number is Even";
          }else{
             echo "Your Number is Odd";
